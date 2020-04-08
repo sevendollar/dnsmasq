@@ -1,7 +1,7 @@
 # dnsmasq
 
 # DNS and DHCP service
-$ docker run --name=dnsmasq --hostname=dnsmasq -d --cap-add=NET_ADMIN --net=host quay.io/coreos/dnsmasq \
+$ docker run --name=dnsmasq --hostname=dnsmasq -d --cap-add=NET_ADMIN --net=host quay.io/coreos/dnsmasq \\
   --no-daemon \
   --dhcp-range=10.5.1.32,10.5.1.33,1h \
   --dhcp-option=option:netmask,255.255.255.0 \
